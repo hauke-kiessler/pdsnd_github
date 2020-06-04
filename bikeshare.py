@@ -214,6 +214,10 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print('The average rental time is: ', mean_travel_time)
 
+    # TO DO: display modus travel time
+    modus_travel_time = df['Trip Duration'].modus()
+    print('The most frequent rental time is: ', modus_travel_time)
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -258,21 +262,6 @@ def user_stats(df):
 
     """Specifies whether the user wants to see 5 lines of raw data.
     After the 5 raw data lines, the user is asked for another 5 lines"""
-
-
-    count = 0
-
-    while True:
-        raw_input = input('Would you like to see the raw data? Enter \'yes\' or\' no\': ')
-
-        if raw_input.lower() != 'yes' and raw_input.lower() != 'y':
-            break
-
-        else:
-            print(df[count: count + 5])
-            print('='*40)
-            count = count + 5
-
 
 
 def main():
