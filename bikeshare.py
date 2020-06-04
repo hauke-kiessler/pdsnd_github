@@ -259,21 +259,6 @@ def user_stats(df):
     """Specifies whether the user wants to see 5 lines of raw data"""
 
 
-    count = 0
-
-    while True:
-        raw_input = input('Would you like to see the raw data? Enter \'yes\' or\' no\': ')
-
-        if raw_input.lower() != 'yes' and raw_input.lower() != 'y':
-            break
-
-        else:
-            print(df[count: count + 5])
-            print('='*40)
-            count = count + 5
-
-
-
 def main():
     while True:
         city, month, day = get_filters()
