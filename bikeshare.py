@@ -18,7 +18,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data! we\'re gonna have fun')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input("We have the following data sets for you to choose from. Select the appropriate number for the city: \n\n      1 = Chicago\n      2 = New York City \n      3 = Washington\n\nPlease choose one city to analyze: ")
 
@@ -256,7 +256,8 @@ def user_stats(df):
     print('-'*40)
 
 
-    """Specifies whether the user wants to see 5 lines of raw data"""
+    """Specifies whether the user wants to see 5 lines of raw data.
+    After the 5 raw data lines, the user is asked for another 5 lines"""
 
 
     count = 0
