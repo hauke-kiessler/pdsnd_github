@@ -214,6 +214,10 @@ def trip_duration_stats(df):
     mean_travel_time = df['Trip Duration'].mean()
     print('The average rental time is: ', mean_travel_time)
 
+    # TO DO: display modus travel time
+    modus_travel_time = df['Trip Duration'].modus()
+    print('The most frequent rental time is: ', modus_travel_time)
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
